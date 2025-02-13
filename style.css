@@ -1,0 +1,165 @@
+/* general */
+
+*{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* sidebar */
+
+.side-bar{
+    width: 5vw;
+    border-right: 0.1px solid rgb(221, 221, 221);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#brand-icon{
+    height: 4vh;
+    width: 2vw;
+    padding: 5px;
+    margin: 30px 20px 30px 20px;
+}
+
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.fa-solid, .fa-regular{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#gear-icon{
+margin: 0;
+padding-bottom: 20px;
+}
+
+
+/* search-bar */
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background: #ececec;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border: none;
+    width: 90%;
+    height: 30px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-bar i {
+    color: gray;
+    font-size: 18px;
+}
+
+
+/* dropdown */
+
+#profPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+button{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+button:hover{
+    background-color: #ececec;
+}
+
+#dropdown-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(70, 70, 70);
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.profile-dropdown i {
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+    font-weight: bolder;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.profile-dropdown i:hover{
+    background-color: #ececec;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    width: 300px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+img{
+    display: flex;
+}
