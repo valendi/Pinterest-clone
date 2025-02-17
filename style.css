@@ -8,7 +8,9 @@
 /* Conenedores */
 
 .contenedor-general{
-    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
 }
 
 .contenedor-lateral{
@@ -29,172 +31,55 @@
     flex-direction: column;
 }
 
-.barra-superior{
+.barra-superior {
     display: flex;
     flex-direction: row;
     position: fixed;
     background-color: white;
     width: 100%;
-    margin-left: 80px;
+    margin-left: 6%;
     margin-bottom: 0;
 }
 
-@media (max-width: 640px){
-    
-    .barra-superior{
-        margin-left: 15%;
-    }
+.bottom-bar{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 6%;
+    background: white;
+    width: 100%;
 
 }
 
 .main-area{
     display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    margin-left: 70px;
-}
-
-@media (max-width: 640px){
-    
-    .main-area{
-        padding-left: 5%;
-  }
-
-}
-
-
-@media (max-width: 720px){
-
-    .main-area{
-        padding-left: 5%;
-  }
-
-}
-
-@media (max-width: 1366px){
-
-    .main-area{
-        padding-left: 5%;
-  }
-
-}
-
-@media (max-width: 1920px){
-
-    .main-area{
-        padding-left: 5%;
-  }
-
-}
-
-
-.filas-img{
-    display: grid;
-    float: inline-start;
-    margin: 15px;
-}
-
-@media (max-width: 1366px){
-
-    .filas-img{
-        margin: 10px;
-    }
-
-}
-
-
-img{
-    margin: 10px;
-    margin-bottom: 30px;
-    border-radius: 30px;
+    margin-top: 6%;
+    margin-left: 6%;
 }
 
 
 /* Barra lateral */
 
 .side-bar{
-    width: 6vw;
+    width: 5.5vw;
     border-right: 0.1px solid rgb(221, 221, 221);
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-@media (max-width: 640px){
-    
-    .side-bar{
-        width: 12vw;
-    }
-
+.sidebar-top{
+    margin-top: 5%;
 }
-
-@media (max-width: 720px){
-
-    .side-bar{
-        width: 13vw;
-    }
-}
-
-button.brand-btn{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 3px;
-    border-radius: 50%;
-    border: none;
-    background-color: white;
-}
-
-#brand-icon{
-    height: 4vh;
-    width: 2vw;
-}
-
-@media (max-width: 640px){
-
-    #brand-icon{
-        height: 4vh;
-        width: 6vw;
-    }
-    
-}
-
-@media (max-width: 720px){
-
-    #brand-icon{
-        height: 3vh;
-        width: 4vw;
-    }
-    
-}
-
-@media (max-width: 1366px){
-
-    #brand-icon{
-        height: 3vh;
-        width: 3vw;
-    }
-    
-}
-
 
 button.item-btn{
-    margin-left: 5px;
-    padding: 2px;
     border-radius: 5px;
     border: none;
     background-color: white;
-}
-
-@media (max-width: 640px){
-
-    button.item-btn{
-        margin-left: 20%;
-    }
-
+    margin: 17px;
+    padding: 10px;
 }
 
 button.item-btn:hover{
@@ -203,43 +88,16 @@ button.item-btn:hover{
 
 .sidebar-item{
     display: flex;
-    align-items: center;
-    margin-bottom: 25px;
 }
 
-@media (max-width: 720px){
-
-    .sidebar-item{
-        margin-bottom: 5px;
-    }
-}
-
-.fa-solid, .fa-regular{
+.fa-solid, .fa-regular, .fa-brands{
     font-size: 18px;
-    padding: 10px;
-}
-
-@media (max-width: 640px){
-
-    .fa-solid, .fa-regular{
-        font-size: 12px;
-        padding: 5px;
-    }
 }
 
 #gear-icon{
-padding-bottom: 15px;
-margin-bottom: 0;
-margin-left: 5px;
-margin-right: 10px;
+    margin-bottom: 10%;
 }
 
-@media (max-width: 640px){
-
-    #gear-icon{
-        margin-right: 20px;
-        }
-}
 
 /* search-bar */
 
@@ -253,29 +111,10 @@ margin-right: 10px;
     padding-left: 5px;
     border-radius: 13px;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: none;
-}
-
-@media (max-width: 640px){
-    
-    .search-bar{
-        margin-left: 5px;
-        margin-right: 5px;
-
-        width: 60%;
-        height: 5px;
-    }
-
-}
-
-@media (max-width: 720px){
-
-    .search-bar{
-        width: 65%;
-    }
 }
 
 .search-bar:hover{
@@ -288,20 +127,13 @@ margin-right: 10px;
     background: transparent;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 640px){
-
-    .search-bar input {
-        font-size: 13px;
-    }
-    
+    padding-top: 10px;
 }
 
 .search-bar i {
     color: gray;
     font-size: 16px;
-    padding-right: 0;
+    padding-left: 10px;
 }
 
 
@@ -326,14 +158,6 @@ margin-right: 10px;
     height: 50px;
 }
 
-@media (max-width: 640px){
-    
-    .profile-area{
-        margin-top: 10px;
-    }
-
-}
-
 button.profile-btn{
     padding: 2px;
     border-radius: 8px;
@@ -355,13 +179,40 @@ button.profile-btn{
     font-size: 16px;
 }
 
-@media (max-width: 640px){
-
-    .profile-dropdown i {
-        display: none;
-    }
-}
-
 .profile-dropdown i:hover{
     background-color: #ececec;
+}
+
+
+/* main area */
+
+.main-content{
+    margin: 2%;
+}
+
+.container-img{
+    float: left;
+}
+ 
+img{
+    border-radius: 30px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .side-bar{
+        display: none;
+    }
+
+    .bottom-bar{
+    display: flex;
+    }
+
+    .main-content{
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+    
 }
